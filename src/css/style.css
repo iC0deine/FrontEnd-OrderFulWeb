@@ -1,5 +1,19 @@
 body {
   background: linear-gradient(121deg, #563186 29.33%, #372451 88.69%) no-repeat;
-  min-height: 100vh;
-  min-width: 100vw;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 50% 25%;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 5px #ddff;
+}
+
+header {
+  grid-column-end: span 2;
 }
