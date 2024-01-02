@@ -8,35 +8,47 @@
   <link rel="stylesheet" href="/src/css/style.css">
   <link rel="stylesheet" href="/src/css/reset.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/estilos.css" />
+  <link rel="stylesheet" href="./src/css/responsivo.css" />
+
   <title>OrderFul</title>
 </head>
 <body>
   <section id="content">
     <header>
+      <div class="header">
       <div class="logo">
         <img src="/src/img/orderful-logo.png" alt="orderful-logo">
       </div>
       <div class="menu" wm-menu="MenuUser"></div>
+    </div>
     </header>
-    <div class="imageContent">
-      <img src="/src/img/LAYER DIREITA.png" alt="Carr-Lambreta-Entrega">
-    </div>
-    <div class="textContent">
-      <p class="text1">Rastreio de Encomenda</p>
+    <div class="layerLeft">
+      <p class="text1">Rastreio de Encomendas</p>
       <p class="text2">Aqui você consegue ativar notificação via e-mail ou sms aproveite!</p>
-    </div>
-    <div class="imputTracking">
-      <input type="text" name="codigoRastreio" id="codigoRastreio" formmethod="post" placeholder="Onde está meu pacote?">
-      <div class="botaopesquisa">
-        <button>
-          <img src="/src/img/iconLupa.png" alt="Lupa">
-        </button>
+      <div class="imputTracking">
+        <input type="text" name="codigoRastreio" id="codigoRastreio" formmethod="post" placeholder="Onde está meu pacote?">
+        <div class="botaopesquisa">
+          <button>
+            <img src="/src/img/iconLupa.png" alt="Lupa">
+          </button>
+        </div>
       </div>
+    </div>
+    <div class="layerRigtht">
+      <img src="/src/img/LAYER DIREITA.png" alt="Carro-moto-entrega">
     </div>
     <footer>
-      <div class="assinatura">
-        <p>Desenvolvido por @blackdot404</p>
-      </div>
+      <div class="footer">
+        <div class="assinatura">
+          <p>Desenvolvido por @blackdot404</p>
+        </div>
+    </div>
     </footer>
   </section>
 </body>
