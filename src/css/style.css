@@ -1,124 +1,134 @@
 body {
-  background: linear-gradient(121deg, #563186 29.33%, #372451 88.69%) no-repeat;
+  background: linear-gradient(121deg, #563186 29.33%, #372451 88.69%);
 }
 
-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 15% 70% 1fr;
-}
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: solid 5px #ddff; */
-}
-
-header {
-  grid-column-end: span 2;
-}
-
-footer {
-  grid-column-end: span 2;
-}
+/*  header flex box */
 
 .header {
-  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  align-content: space-between;
-  height: 100px;
+  align-items: center;
+  padding: 20px;
 }
 
-.logo {
-  margin-left: 40px;
-}
-
-.layer-left {
-  /* border: solid 5px #ddff; */
-  flex-direction: column;
-  justify-content: space-around;
-  width: 362px;
-  height: 233px;
-  margin-top: 250px;
-  margin-left: 100px;
-}
-
-.layer-left .text1 {
+.header a {
+  font-family: Rubik;
   color: #EBEBEB;
-  font-size: 40px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
 }
 
-.layer-left .text2 {
-  color: #EBEBEB;
-  font-size: 14px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
+.header img {
+  max-width: 100%;
 }
 
-.container-wrapper {
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+}
+
+/* css flex box */
+
+main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex: 1 1 0;
 }
 
-/* .container {
-  background-color: black;
-} */
+/* Conteudo */
+
+.container-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 300px;
+  /* background-color: black; */
+}
+
+.container-left h1 {
+  color: #EBEBEB;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 44px */
+}
+
+.container-left p {
+  color: #EBEBEB;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+}
 
 .input-wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 11px 10px;
+  height: 50px;
+  width: 350px;
   align-items: center;
-  padding: 6px 14px;
-  gap: 135px;
   border-radius: 48px;
   background: #2D2A37;
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset, 0px 6px 8px 0px rgba(255, 255, 255, 0.10) inset, 0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26), 0px 68px 41px 0px rgba(0, 0, 0, 0.15), 0px 120px 48px 0px rgba(0, 0, 0, 0.04), 0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.input-wrapper > input {
+.input-wrapper input {
+  color: #EBEBEB;
   background-color: transparent;
   border: none;
-  color: #7B7B7B;
-  font-family: Rubik;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 14px */
 }
 
-.input-wrapper > button {
-  border: none;
-  height: 43px;
+.input-wrapper button {
+  display: flex;
   width: 43px;
-  padding: 4px 1px 1px 1px;
+  height: 43px;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border: none;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255,  255, 0.05) 100%), #7F45E2;
   box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 11px 7px 0px rgba(0, 0, 0, 0.01);
-
   cursor: pointer;
 }
 
-input:focus-visible {
-  outline: none;
+.container-right img {
+  max-width: 100%;
 }
+
+/* footer flex */
 
 .footer {
-  height: 144.92px;
-  align-items: flex-end;
-}
-
-.footer p {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba(255, 255, 255, 0.60);
   font-family: Franklin Gothic Medium;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 13.2px */
+  padding: 10px;
+}
+
+.footer  a {
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Franklin Gothic Medium;
 }

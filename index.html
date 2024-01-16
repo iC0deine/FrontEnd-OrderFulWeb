@@ -12,46 +12,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/estilos.css" />
-  <link rel="stylesheet" href="./src/css/responsivo.css" />
-
   <title>OrderFul</title>
 </head>
 <body>
-  <section id="content">
-    <header>
-      <div class="header">
-        <div class="logo">
-          <img src="/src/img/orderful-logo.png" alt="orderful-logo">
-        </div>
-      <div class="menu" wm-menu="MenuUser"></div>
+  <section id="page-content">
+  <header class="header">
+    <div class="orderful-logo">
+    <img src="./src/img/orderful-logo.png" alt="orderful-logo">
     </div>
-    </header>
-    <div class="layer-left">
-      <p class="text1">Rastreio de Encomendas</p>
-      <p class="text2">Aqui você consegue ativar notificação via e-mail ou sms aproveite!</p>
-      <div class="container-wrapper">
-        <div class="container">
-          <div class="input-wrapper">
-            <input placeholder="Onde está meu pacote?"/>
-            <button class="botao-pesquisa">
-              <img src="/src/img/iconLupa.png" alt="Lupa">
-            </button>
-          </div>
-        </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="./">Entrar</a></li>
+        <li><a href="./">Sobre</a></li>
+        <li><a href="./">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container-left">
+      <h1>Rastreio<br/> de Encomenda</h1>
+      <p>Aqui você consegue ativar notificação via e-mail ou sms aproveite!</p>
+      <div class="input-wrapper">
+        <input type="text" placeholder="Onde está meu pacote?">
+        <button class="botão-pesquisa" type="submit">
+          <img src="./src/img/iconLupa.png" alt="lupa">
+        </button>
       </div>
     </div>
-    <div class="layer-rigtht">
-      <img src="/src/img/LAYER DIREITA.png" alt="Carro-moto-entrega">
+    <div class="container-right">
+      <img src="./src/img/LAYER DIREITA.png" alt="carro-moto-entrega">
     </div>
-    <footer>
-      <div class="footer">
-        <div class="assinatura">
-          <p>Desenvolvido por @blackdot404 & iC0deine</p>
-        </div>
-    </div>
-    </footer>
-  </section>
+  </main>
+  <footer class="footer">
+    <i>Desenvolvido por <a href="https://github.com/blackdot404">@blackdot404</a> & <a href="https://github.com/iC0deine">iC0deine</a></i>
+  </footer>
+</section>
 </body>
 </html>
