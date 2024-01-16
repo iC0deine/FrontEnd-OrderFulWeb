@@ -2,6 +2,10 @@ body {
   background: linear-gradient(121deg, #563186 29.33%, #372451 88.69%);
 }
 
+header button:active {
+  border-style: none;
+}
+
 
 /*  header flex box */
 
@@ -32,6 +36,17 @@ body {
 
 .menu li a {
   padding: 10px;
+}
+
+.menu-toggle {
+  color: #EFEDEFCC;
+  background-color: #351E53;
+  border-radius: 10px;
+  padding: 10px 12px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  display: none;
 }
 
 /* css flex box */
@@ -114,8 +129,6 @@ main {
   cursor: pointer;
 }
 
-
-
 .container-right img {
   max-width: 100%;
 }
@@ -138,4 +151,67 @@ main {
 .footer  a {
   color: rgba(255, 255, 255, 0.60);
   font-family: Franklin Gothic Medium;
+}
+
+/* responsive */
+
+@media (min-width: 679px) and (max-width: 1299px) {
+
+  .container-right {
+    max-width: 40%;
+  }
+
+  .header img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .header img {
+    max-width: 70%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-left {
+    height: 200px;
+    width: 300px;
+  }
+
+  .container-left h1 {
+    font-size: 25px;
+  }
+
+  .container-left p {
+    font-size: 10px;
+  }
+
+  .input-wrapper {
+    height: 40px;
+    width: 290px;
+  }
+
+  .input-wrapper img {
+    max-width: 100%;
+  }
+
+  .input-wrapper input {
+    font-size: 14px;
+  }
+
+  .input-wrapper button {
+    height: 38px;
+    width: 38px;
+  }
+
+  .container-right {
+    display: none;
+  }
 }
