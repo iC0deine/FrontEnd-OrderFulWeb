@@ -16,18 +16,19 @@
   <title>OrderFul</title>
 </head>
 <body>
-  <section id="page-content">
+  <section id="pagecontent">
   <header class="header">
     <div class="orderful-logo">
     <img src="./src/img/orderful-logo.png" alt="orderful-logo">
     </div>
-    <nav class="menu">
+    <nav>
+      <ul class="menu">
         <li><a href="#login">Login</a></li>
         <li><a href="#registrar">Registrar</a></li>
         <li><a href="#sobre">Sobre</a></li>
       </ul>
     </nav>
-    <button class="menu-toggle">
+    <button class="menu-toggle" name="menu-toggle">
       <i class="fa-sharp fa-solid fa-bars"></i>
     </button>
   </header>
@@ -35,12 +36,12 @@
     <div class="container-left">
       <h1>Rastreio<br/> de Encomendas</h1>
       <p>Aqui você consegue ativar notificação via e-mail ou sms aproveite!</p>
-      <div class="input-wrapper">
-        <input type="text" placeholder="Onde está meu pacote?">
-        <button class="botão-pesquisa" type="submit">
-          <img src="./src/img/iconLupa.png" alt="lupa">
-        </button>
-      </div>
+        <form class="input-wrapper" action="">
+          <input type="text" name="inputcodigo" placeholder="Onde está meu pacote?">
+          <button class="botão-pesquisa" wm-submit>
+            <img src="./src/img/iconLupa.png" alt="lupa">
+          </button>
+      </form>
     </div>
     <div class="container-right">
       <img src="./src/img/LAYER DIREITA.png" alt="carro-moto-entrega">

@@ -92,10 +92,9 @@ main {
 .input-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 11px 10px;
-  height: 50px;
+  padding: 7px 10px;
+  height: 55px;
   width: 350px;
-  align-items: center;
   border-radius: 48px;
   background: #2D2A37;
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset, 0px 6px 8px 0px rgba(255, 255, 255, 0.10) inset, 0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26), 0px 68px 41px 0px rgba(0, 0, 0, 0.15), 0px 120px 48px 0px rgba(0, 0, 0, 0.04), 0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -194,8 +193,9 @@ main {
   }
 
   .input-wrapper {
-    height: 40px;
+    height: 45px;
     width: 290px;
+    padding: 4px 7px 7px 7px;
   }
 
   .input-wrapper img {
@@ -209,6 +209,7 @@ main {
   .input-wrapper button {
     height: 38px;
     width: 38px;
+    padding: 3px;
   }
 
   .container-right {
